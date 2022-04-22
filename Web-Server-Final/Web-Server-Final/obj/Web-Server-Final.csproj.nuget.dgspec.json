@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apugh\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj": {}
+    "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apugh\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj": {
+    "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apugh\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
+        "projectUniqueName": "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
         "projectName": "Web-Server-Final",
-        "projectPath": "C:\\Users\\apugh\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
-        "packagesPath": "C:\\Users\\apugh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apugh\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\obj\\",
+        "projectPath": "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
+        "packagesPath": "C:\\Users\\ymeat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\apugh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ymeat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,18 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
