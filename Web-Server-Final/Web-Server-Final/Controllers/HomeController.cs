@@ -12,10 +12,12 @@ namespace Web_Server_Final.Controllers
     public class HomeController : Controller
     {
         private Repository<Team> teams { get; set; }
+        private Repository<Sport> sports { get; set; }
 
         public HomeController(WebServerFinalContext ctx)
         {
             teams = new Repository<Team>(ctx);
+            sports = new Repository<Sport>(ctx);
         }
 
         public IActionResult Index()
@@ -30,7 +32,12 @@ namespace Web_Server_Final.Controllers
 
         public IActionResult DiffSports()
         {
-            return View();
+            var options = new QueryOptions<Sport>
+            {
+                OrderBy = s => s.SportId
+            };
+            ViewBag.Sports = sports.List(options);
+            return View(sports.List(options));
         }
 
         public IActionResult SportHistory()
