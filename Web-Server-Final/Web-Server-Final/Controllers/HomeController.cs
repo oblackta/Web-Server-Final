@@ -11,11 +11,11 @@ namespace Web_Server_Final.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private Repository<Team> teams { get; set; }
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(WebServerFinalContext ctx)
         {
-            _logger = logger;
+            teams = new Repository<Team>(ctx);
         }
 
         public IActionResult Index()
@@ -45,7 +45,12 @@ namespace Web_Server_Final.Controllers
 
         public IActionResult Teams()
         {
-            return View();
+            var options = new QueryOptions<Team>
+            {
+                OrderBy = t => t.TeamId
+            };
+            ViewBag.Teams = teams.List(options);
+            return View(teams.List(options));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

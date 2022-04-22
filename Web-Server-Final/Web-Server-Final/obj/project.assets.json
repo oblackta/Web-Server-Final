@@ -5000,11 +5000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
+      "projectUniqueName": "C:\\Users\\ymeat\\Source\\Repos\\Web-Server-Final12\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
       "projectName": "Web-Server-Final",
-      "projectPath": "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
+      "projectPath": "C:\\Users\\ymeat\\Source\\Repos\\Web-Server-Final12\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final.csproj",
       "packagesPath": "C:\\Users\\ymeat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ymeat\\source\\repos\\Web-Server-Final\\Web-Server-Final\\Web-Server-Final\\obj\\",
+      "outputPath": "C:\\Users\\ymeat\\Source\\Repos\\Web-Server-Final12\\Web-Server-Final\\Web-Server-Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ymeat\\AppData\\Roaming\\NuGet\\NuGet.Config",

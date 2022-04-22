@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<Team>
+
+@{
     ViewData["Title"] = "Teams";
 }
 <div class="text-center">
@@ -6,3 +8,19 @@
 </div>
 
 <hr />
+
+<table class="table">
+    <thead>
+        <tr><th>Name</th><th>City</th><th>SportId</th></tr>
+    </thead>
+    <tbody>
+        @foreach(Team t in Model)
+        {
+            <tr>
+                <td>@t.TeamName</td>
+                <td>@t.City</td>
+                <td>@t.SportId</td>
+            </tr>
+        }
+    </tbody>
+</table>
