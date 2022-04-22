@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Part 1 : Implement jQuery Datatable in ASP.NET MVC</h2>
+<div style="width:90%; margin:0 auto;">
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Company</th>
+                <th>Phone</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Postal Code</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<style>
+    tr.even {
+        background-color: #F5F5F5 !important;
+    }
+</style>
+@* Load datatable css *@
+<link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet" />
+@* Load datatable js *@
+@section Scripts{
+    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                "ajax": {
+                    "url": "/home/loaddata",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns" : [
+                        { "data": "ContactName", "autoWidth": true },
+                        { "data": "CompanyName", "autoWidth": true },
+                        { "data": "Phone", "autoWidth": true },
+                        { "data": "Country", "autoWidth": true },
+                        { "data": "City", "autoWidth": true },
+                        { "data": "PostalCode", "autoWidth": true }
+                    ]
+            });
+        });
+    </script>
+}
