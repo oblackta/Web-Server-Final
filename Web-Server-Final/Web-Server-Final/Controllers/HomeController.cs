@@ -23,7 +23,27 @@ namespace Web_Server_Final.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Aboutus()
+        {
+            return View();
+        }
+
+        public IActionResult DiffSports()
+        {
+            return View();
+        }
+
+        public IActionResult SportHistory()
+        {
+            return View();
+        }
+
+        public IActionResult SportSchedules()
+        {
+            return View();
+        }
+
+        public IActionResult Teams()
         {
             return View();
         }
